@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require_relative '../repositories/episodes.rb'
-require_relative '../transformations/unshot.rb'
-
 module Hanamimastery
   module CLI
     module Commands
@@ -11,10 +8,10 @@ module Hanamimastery
 
         argument :episode, type: :integer, required: true, desc: "Episodes ID to unshot"
 
-        def initialize
-          @repository = Repositories::Episodes.new
-          @transformation = Transformations::Unshot.new
-        end
+        include Deps[
+          repository: 'repositories.episodes',
+          transformation: 'hanamimasterytransformations.unshot'
+        ]
 
         attr_reader :transformation, :repository
 

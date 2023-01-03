@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
+require_relative 'container'
+
 module Hanamimastery
   module CLI
-    module Commands
-    end
+    Deps = Container.injector
   end
 end

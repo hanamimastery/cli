@@ -2,9 +2,6 @@
 
 require 'time'
 
-require_relative '../repositories/episodes.rb'
-require_relative '../transformations/touch.rb'
-
 module Hanamimastery
   module CLI
     module Commands
@@ -13,12 +10,10 @@ module Hanamimastery
         argument :episode, type: :integer, required: :true, desc: "Episode's ID to touch"
         option :timestamp, type: :string, default: Time.now.to_s, desc: 'Override modified time'
 
-        attr_reader :transformation, :repository
-
-        def initialize
-          @repository = Repositories::Episodes.new
-          @transformation = Transformations::Touch.new
-        end
+        include Deps[
+          repository: 'repositories.episodes',
+          transformation: 'transformations.touch'
+        ]
 
         def call(episode:, timestamp:, **)
           timestamp = Time.parse(timestamp)
