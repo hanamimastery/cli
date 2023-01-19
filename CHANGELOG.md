@@ -14,3 +14,14 @@ Removes shot marks from a given article (i.e. ""[🎬 01] ")
 
 **Touch**
 Updates the modifiedAt with the current date
+
+## [0.2.0] - 2023-01-19
+
+- PRO command
+
+Added new command to render HTML version of premium episodes.
+
+### Features
+
+**PRO**
+Transformes episode's markdown into HTML ready to be used in Podia editor.
