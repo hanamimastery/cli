@@ -12,6 +12,7 @@ module Hanamimastery
         end
         config.inflector = Dry::Inflector.new do |inflections|
           inflections.acronym('CLI')
+          inflections.acronym('PRO')
         end
       end
     end

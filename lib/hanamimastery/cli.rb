@@ -13,5 +13,6 @@ module Hanamimastery
 
     register 'touch', Commands::Touch
     register 'unshot', Commands::Unshot
+    register 'pro', Commands::ToPRO
   end
 end

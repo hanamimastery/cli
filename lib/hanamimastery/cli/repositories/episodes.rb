@@ -2,6 +2,16 @@
 
 module Hanamimastery
   module CLI
+    module Entities
+      class Episode
+        def initialize(content)
+          starts_from = content.lines[1..-1].index("---\n") + 2
+          @content = content.lines[starts_from..-1].join
+        end
+        attr_reader :content
+      end
+    end
+
     module Repositories
       class Episodes
         REPO_PATH = '/Users/Sebastian/Projects/hanamimastery/source'
@@ -19,6 +29,10 @@ module Hanamimastery
 
         def exists?(id)
           File.exists?(find(id))
+        end
+
+        def fetch(id)
+          Entities::Episode.new(read(id))
         end
 
         private

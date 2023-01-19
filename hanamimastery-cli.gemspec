@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dry-cli", "<= 1.0"
   spec.add_dependency "dry-configurable", "~> 1.0"
   spec.add_dependency "dry-system", "~> 1.0"
+  spec.add_dependency "commonmarker", "~> 1.0.0.pre6"
 
   spec.add_runtime_dependency "zeitwerk", "~> 2.6"
 end
