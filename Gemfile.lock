@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hanamimastery-cli (0.1.0)
+    hanamimastery-cli (0.2.0)
       commonmarker (~> 1.0.0.pre6)
       dry-cli (<= 1.0)
       dry-configurable (~> 1.0)
