@@ -2,6 +2,8 @@
 
 module Hanamimastery
   module CLI
-    class Error < StandardError; end
+    module Errors
+      class BaseError < StandardError; end
+    end
   end
 end

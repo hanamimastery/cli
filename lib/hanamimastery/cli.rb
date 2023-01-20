@@ -1,16 +1,13 @@
 # frozen_string_literal: true
 
 require 'dry/cli'
+require 'hanamimastery/cli/version'
+require 'hanamimastery/cli/errors'
+require 'hanamimastery/cli/deps'
 
 module Hanamimastery
   module CLI
-    require_relative 'cli/version'
-    require_relative 'cli/error'
-    require_relative 'cli/deps'
-    require_relative 'cli/commands'
-
     extend Dry::CLI::Registry
-
     register 'touch', Commands::Touch
     register 'unshot', Commands::Unshot
     register 'pro', Commands::ToPRO

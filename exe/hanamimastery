@@ -4,6 +4,8 @@
 require "bundler/setup"
 require "hanamimastery/cli"
 
+Hanamimastery::CLI::Container.finalize!
+
 cli = Dry::CLI.new(Hanamimastery::CLI)
 
 cli.call
