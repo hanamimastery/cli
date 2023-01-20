@@ -25,3 +25,12 @@ Added new command to render HTML version of premium episodes.
 
 **PRO**
 Transformes episode's markdown into HTML ready to be used in Podia editor.
+
+
+## [0.2.1] - 2023-01-20
+
+- Fixed incorrect dependency loading key
+
+## [0.2.2] - 2023-01-20
+
+- Improved zeitwer configuration for file loading
