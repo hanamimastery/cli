@@ -10,7 +10,7 @@ module Hanamimastery
 
         include Deps[
           repository: 'repositories.episodes',
-          transformation: 'hanamimasterytransformations.unshot'
+          transformation: 'transformations.unshot'
         ]
 
         attr_reader :transformation, :repository
