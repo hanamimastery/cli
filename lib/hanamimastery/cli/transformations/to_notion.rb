@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'commonmarker'
-
 module Hanamimastery
   module CLI
     module Transformations
@@ -13,7 +11,7 @@ module Hanamimastery
         #
         def call(id, content)
           image_patern = /\!(\[\[)(.+)(\]\])/
-          result
+          content
             .gsub(image_pattern, "![#{'\2'.humanize.tr('-', ''))}](#{HOST}/images/episodes/#{id})")
         end
       end
