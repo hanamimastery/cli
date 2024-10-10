@@ -3,7 +3,7 @@ PATH
   specs:
     hanamimastery-cli (0.3.1)
       commonmarker (~> 1.0.0.pre6)
-      dry-cli (<= 1.0)
+      dry-cli (~> 1.0)
       dry-configurable (~> 1.0)
       dry-system (~> 1.0)
       zeitwerk (~> 2.6)

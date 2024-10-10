@@ -5,7 +5,6 @@ module Hanamimastery
     module Commands
       class Unshot < Dry::CLI::Command
         desc 'Removes shot marks from a given article (i.e. ""[🎬 01] ")'
-
         argument :episode, type: :integer, required: true, desc: "Episodes ID to unshot"
 
         include Deps[

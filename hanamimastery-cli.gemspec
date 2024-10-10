@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "dry-cli", "<= 1.0"
+  spec.add_dependency "dry-cli", "~> 1.0"
   spec.add_dependency "dry-configurable", "~> 1.0"
   spec.add_dependency "dry-system", "~> 1.0"
   spec.add_dependency "commonmarker", "~> 1.0.0.pre6"
