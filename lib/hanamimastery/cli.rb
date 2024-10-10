@@ -11,5 +11,6 @@ module Hanamimastery
     register 'touch', Commands::Touch
     register 'unshot', Commands::Unshot
     register 'pro', Commands::ToPRO
+    register 'notion', Commands::ToNotion
   end
 end
